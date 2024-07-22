@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap");
+@import url("https://fonts.gstatic.com/s/playwritecu/v1/VuJ2dNDb2p7tvoFGLMPdf9xGZDFft0s.woff2");
+@font-face {
+  font-family: "Playwrite";
+  src: url(https://fonts.gstatic.com/s/playwritecu/v1/VuJ2dNDb2p7tvoFGLMPdf9xGZDFft0s.woff2);
+}
+@font-face {
+  font-family: "Kalnia Glaze";
+  src: url(https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap);
+}
+@font-face {
+  font-family: "Spring";
+  src: url("../../fonts/Spring.ttf") format("truetype");
+}
+body {
+  font-size: 16px;
+  font-family: "Kalnia Glaze";
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav,
+ul {
+  list-style: none;
+  color: yellow;
+  font-family: "Playwrite";
+}
+
+header nav div ul li:not(:first-of-type) > a:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  font-family: "Spring";
+  color: red;
+}/*# sourceMappingURL=global.css.map */
