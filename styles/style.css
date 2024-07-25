@@ -1,39 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-}
-@font-face {
-  font-family: "Rainbow";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-  font-weight: 400;
-  font-style: normal;
-}
 @font-face {
   font-family: "Spring";
   src: url("../../fonts/Spring.ttf") format("truetype");
 }
 .hs-samples {
   margin: 0;
-  padding: 10px;
   background-color: rgba(184, 174, 161, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .images {
   width: 100%;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   display: flex;
-  gap: 10px;
-  overflow: hidden;
+  overflow-x: scroll;
+}
+.images img {
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px gray;
+  margin: 10px;
 }
 
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 .stylist {
   display: flex;
   padding: 50px 40px;
@@ -48,6 +46,7 @@
   margin: 0 5px;
   font-family: "Quicksand";
   font-weight: 600;
+  font-size: 18px;
 }
 
 .footer {
@@ -55,13 +54,14 @@
   padding: 40px;
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 15%;
+  flex: 1;
 }
 .footer p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 .footer-social__title {
-  font-family: "Rainbow" !important;
-  font-weight: 700;
+  font-family: "Kalnia Glaze";
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

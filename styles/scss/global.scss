@@ -7,6 +7,8 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .bold-text {
@@ -22,7 +24,7 @@ body {
 }
 
 .logo-title {
-    font-family: 'Spring';
+    font-family: $Spring;
 }
 
 img:not(.logo-image, .icon) {
@@ -46,8 +48,8 @@ ul {
     &__nav {
         height: 100%;
         display: flex;
-        gap: 30%;
-        padding: 0 3%;
+        padding: 0 2%;
+        justify-content: space-between;
 
         &-list {
             margin: 0;

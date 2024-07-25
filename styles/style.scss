@@ -2,17 +2,33 @@
 
 .hs-samples {
     margin: 0;
-    padding: 10px;
     background-color: rgba(184, 174, 161, 0.253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .images {
     width: 100%;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     display: flex;
-    gap: 10px;
-    overflow: hidden;
+    overflow-x: scroll;
+
+    & img {
+        border-radius: 5px;
+        box-shadow: 0 0 3px 1px gray;
+        margin: 10px;
+    }
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .stylist {
@@ -20,7 +36,6 @@
     padding: 50px 40px;
     gap: 50px;
     
-
     &__image {
         box-shadow: 0 3px 5px 7px white;
     }
@@ -31,6 +46,7 @@
         margin: 0 5px;
         font-family: $Quicksand;
         font-weight: 600;
+        font-size: 18px;
     }
 }
 
@@ -39,15 +55,16 @@
     padding: 40px;
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 15%;
+    flex: 1;
 
     & p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     &-social__title {
-        font-family: $Rainbow !important;
-        font-weight: 700;
+        font-family: $Rainbow;
+        font-weight: 600;
     }
 }

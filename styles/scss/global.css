@@ -1,20 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-}
-@font-face {
-  font-family: "Rainbow";
-  src: url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
-  font-weight: 400;
-  font-style: normal;
-}
 @font-face {
   font-family: "Spring";
   src: url("../../fonts/Spring.ttf") format("truetype");
@@ -26,6 +10,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .bold-text {
@@ -65,8 +51,8 @@ ul {
 .header__nav {
   height: 100%;
   display: flex;
-  gap: 30%;
-  padding: 0 3%;
+  padding: 0 2%;
+  justify-content: space-between;
 }
 .header__nav-list {
   margin: 0;
