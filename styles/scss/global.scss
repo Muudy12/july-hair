@@ -1,28 +1,75 @@
 @use "./partials/typography" as *;
 
+html,
 body {
-    font-size: 16px;
-    font-family: $KG;
+    font-family: $Montserrat;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-a:link, a:visited {
+.bold-text {
+    font-weight: 700;
+}
+
+.icon {
+    width: 35px;
+}
+
+.logo-image {
+    width: 80px;
+}
+
+.logo-title {
+    font-family: 'Spring';
+}
+
+img:not(.logo-image, .icon) {
+    width: 200px;
+    height: 230px;
+}
+
+a, a:hover {
     color: black;
+    font-weight: 600;
     text-decoration: none;
 }
 
-nav,
 ul {
     list-style: none;
-    color: yellow;
-    font-family: "Playwrite";
 }
 
-header nav div ul li:not(:first-of-type) > a:hover {
-    background-color: black;
-    color: white;
-}
+.header {
+    background-color: pink;
 
-footer {
-    font-family: "Spring";
-    color: red;
+    &__nav {
+        height: 100%;
+        display: flex;
+        gap: 30%;
+        padding: 0 3%;
+
+        &-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+
+            & li {
+                align-content: center;
+                text-align: center;
+
+                &:hover {
+                    border-bottom: 5px solid gray;
+                    text-shadow: 0 1.5px 0 white;
+                }
+            }
+        }
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+    }
 }

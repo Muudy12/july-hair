@@ -1,18 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
-$KG: "Kalnia Glaze";
-
-@import url('https://fonts.gstatic.com/s/playwritecu/v1/VuJ2dNDb2p7tvoFGLMPdf9xGZDFft0s.woff2');
-
+// External fonts
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$Montserrat: 'Montserrat';
 @font-face {
-    font-family: 'Playwrite';
-    src: url(https://fonts.gstatic.com/s/playwritecu/v1/VuJ2dNDb2p7tvoFGLMPdf9xGZDFft0s.woff2);
-};
+    font-family: $Montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+$Quicksand: 'Quicksand';
 @font-face {
-    font-family: $KG;
-    src: url(https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap);
-};
+    font-family: $Quicksand;
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+$Rainbow: 'Rainbow';
+@font-face {
+    font-family: $Rainbow;
+    src: url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kalnia+Glaze:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+// Local fonts
 @font-face {
     font-family: "Spring";
     src: url("../../fonts/Spring.ttf") format('truetype'); // to use local font files, need to download and install it or else it will not show the custom font.

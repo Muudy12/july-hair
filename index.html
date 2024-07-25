@@ -17,91 +17,67 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <div>
-          <ul>
-            <li>
-              <a href=""
-                ><img src="./assets/hair-logo.svg" alt="hair logo"
-              /></a>
-            </li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">PRICE</a></li>
-            <li><a href="">BOOK NOW</a></li>
-          </ul>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav-logo">
+          <img
+            class="logo-image"
+            src="./assets/hair-logo.svg"
+            alt="hair logo"
+          />
+          <a href="">
+            <h1 class="logo-title">JHS</h1>
+          </a>
         </div>
-        <div>
-          <h1>JHS</h1>
-        </div>
+        <ul class="header__nav-list">
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PRICE</a></li>
+          <li><a href="">BOOK NOW</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <ul>
-          <li><img src="./assets/red-hs.jpg" alt="red hair style" /></li>
-          <li><img src="./assets/blond-hs.jpg" alt="blond hair style" /></li>
-          <li>
-            <img src="./assets/dark-brown-hs.jpg" alt="dark brown hair style" />
-          </li>
-          <li>
-            <img
-              src="./assets/caramel-pop-hs.jpg"
-              alt="caramel pop hair style"
-            />
-          </li>
-          <li>
-            <img
-              src="./assets/purple-pop-hs.jpg"
-              alt="purple pop up hair style"
-            />
-          </li>
-          <li>
-            <img
-              class="perm-hs"
-              src="./assets/perm-hs.jpg"
-              alt="perm hair style"
-            />
-          </li>
-          <li>
-            <img src="./assets/high-taper-hs.jpg" alt="high taper hair style" />
-          </li>
-          <li>
-            <img src="./assets/bright-red-hs.jpg" alt="bright red hair style" />
-          </li>
-          <li>
-            <img
-              src="./assets/summer-color-hs.jpg"
-              alt="summer color hair style"
-            />
-          </li>
-          <li><img src="./assets/braids-hs.jpg" alt="braids hair style" /></li>
-          <li><img src="./assets/short-hs.jpg" alt="short hair style" /></li>
-          <li>
-            <img src="./assets/root-melt-hs.jpg" alt="root melt hair style" />
-          </li>
-          <li>
-            <img src="./assets/brunette-hs.jpg" alt="brunette hair style" />
-          </li>
-          <li>
-            <img src="./assets/short-short-hs.jpg" alt="short hair style" />
-          </li>
-          <li>
-            <img
-              src="./assets/dimensional-brunette-hs.jpg"
-              alt="dimensional brunette hair style"
-            />
-          </li>
-        </ul>
+    <main class="main">
+      <section class="hs-samples">
+        <div class="images">
+          <img src="./assets/red-hs.jpg" alt="red hair style" />
+          <img src="./assets/blond-hs.jpg" alt="blond hair style" />
+          <img src="./assets/dark-brown-hs.jpg" alt="dark brown hair style" />
+          <img src="./assets/caramel-pop-hs.jpg" alt="caramel pop hair style" />
+          <img
+            src="./assets/purple-pop-hs.jpg"
+            alt="purple pop up hair style"
+          />
+          <img
+            class="perm-hs"
+            src="./assets/perm-hs.jpg"
+            alt="perm hair style"
+          />
+          <img src="./assets/high-taper-hs.jpg" alt="high taper hair style" />
+          <img src="./assets/bright-red-hs.jpg" alt="bright red hair style" />
+          <img
+            src="./assets/summer-color-hs.jpg"
+            alt="summer color hair style"
+          />
+          <img src="./assets/braids-hs.jpg" alt="braids hair style" />
+          <img src="./assets/short-hs.jpg" alt="short hair style" />
+          <img src="./assets/root-melt-hs.jpg" alt="root melt hair style" />
+          <img src="./assets/brunette-hs.jpg" alt="brunette hair style" />
+          <img src="./assets/short-short-hs.jpg" alt="short hair style" />
+          <img
+            src="./assets/dimensional-brunette-hs.jpg"
+            alt="dimensional brunette hair style"
+          />
+        </div>
       </section>
 
-      <section>
-        <article>
-          <img src="./assets/july.jpg" alt="july picture" />
-        </article>
-
-        <article>
+      <section class="stylist">
+        <img
+          class="stylist__image"
+          src="./assets/july.jpg"
+          alt="july picture"
+        />
+        <aside class="stylist__description">
           <p>
             Meet July, your dedicated hairstylist with a passion for enhancing
             natural beauty through the art of hair styling. With 2 years of
@@ -118,28 +94,54 @@
             salon and experience a personalized approach to hair care that
             enhances your natural beauty and leaves you feeling fabulous.
           </p>
-        </article>
+        </aside>
       </section>
     </main>
 
-    <footer>
-      <div>
+    <footer class="footer">
+      <article>
         <h3>Address</h3>
         <p>503 Broadway Penthouse <br />New York</p>
-      </div>
-      <div>
+      </article>
+      <article>
         <h3>Hours</h3>
         <p>
-          <strong>Monday - Friday:</strong> 9am - 7pm <br />
-          <strong>Saturday - Sunday:</strong> 10am - 5pm
+          <span class="bold-text">Monday - Friday:</span> 9am - 7pm <br />
+          <span class="bold-text">Saturday - Sunday:</span> 10am - 5pm
         </p>
-      </div>
-      <div>
-        <h3>Social</h3>
+      </article>
+      <article>
+        <h3 class="footer-social__title">Social</h3>
         <a href="https://www.instagram.com/july.styles/"
-          ><img src="./assets/ig-logo.png" alt="instagram"
+          ><img class="icon" src="./assets/ig-logo.png" alt="instagram"
         /></a>
-      </div>
+      </article>
     </footer>
+
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const imagesContainer = document.querySelector(".images");
+      //   const images = document.querySelectorAll(".images img");
+      //   const containerWidth = document.querySelector(".container").offsetWidth; // Adjusteed for margin-right
+
+      //   let position = 0;
+
+      //   function scrollImages() {
+      //     position -= 1;
+      //     imagesContainer.style.transform = `translateX(${position}px)`;
+
+      //     const firstImage = imagesContainer.firstElementChild;
+      //     if (firstImage.getBoundingClientRect().right <= 0) {
+      //       position += firstImage.offsetWidth + 20; // Adjust for image width + margin-right
+      //       imagesContainer.appendChild(firstImage);
+      //       imagesContainer.style.transform = `translateX(${position}px)`;
+      //     }
+
+      //     requestAnimationFrame(scrollImages);
+      //   }
+
+      //   scrollImages(); // calling the function
+      // });
+    </script>
   </body>
 </html>
