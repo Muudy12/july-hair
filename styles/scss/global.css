@@ -75,6 +75,7 @@ ul {
 .header__nav-list li {
   align-content: center;
   text-align: center;
+  height: 100%;
 }
 .header__nav-list li:hover {
   border-bottom: 5px solid gray;
